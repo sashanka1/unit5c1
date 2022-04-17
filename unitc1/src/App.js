@@ -35,6 +35,9 @@ function App() {
     setBall(b+1)
   
   }
+  const inw =()=>{
+   return "India win"
+   }
 
 
 
@@ -101,8 +104,12 @@ function App() {
       </div>
 
       {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */
-      
+       
+     
+       <h1 className="status">{  Val>=101 ? inw() :" " }</h1>
+
       }
+        
       
 
     </div>
